@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maths Operations </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Utility Web App</h1>
+    <p>Click a card to use a specific feature.</p>
+
+    
+    <div class="cards">
+      
+      <div class="card" onclick="navigateTo('fibonacci')">
+        <h2>Fibonacci Sequence</h2>
+        <p>Generate Fibonacci numbers up to a specific term.</p>
+      </div>
+
+      <div class="card" onclick="navigateTo('palindrome')">
+        <h2>Palindrome Checker</h2>
+        <p>Check if a string is a palindrome.</p>
+      </div>
+
+      <div class="card" onclick="navigateTo('factorial')">
+        <h2>Factorial Calculator</h2>
+        <p>Calculate the factorial of a number.</p>
+      </div>
+
+      <div class="card" onclick="navigateTo('prime')">
+        <h2>Prime Number Checker</h2>
+        <p>Check if a number is prime.</p>
+      </div>
+
+      <div class="card" onclick="navigateTo('array')">
+        <h2>Array Operations</h2>
+        <p>Perform various operations on arrays.</p>
+      </div>
+
+     
+      <div class="card" onclick="navigateTo('quadratic')">
+        <h2>Quadratic Equation Solver</h2>
+        <p>Solve a quadratic equation (ax² + bx + c = 0).</p>
+      </div>
+
+      <div class="card" onclick="navigateTo('calendar')">
+        <h2>Calendar Generator</h2>
+        <p>Generate a calendar for any given month and year.</p>
+      </div>
+    </div>
+
+    
+    <div id="operation-section" class="operation-section">
+      <button onclick="goBack()">Back to Cards</button>
+      <div id="operation-container"></div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
